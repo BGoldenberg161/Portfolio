@@ -1,5 +1,5 @@
-import React from 'react';
-import '../App.css';
+import React from 'react'
+import '../App.css'
 
 const Contact = () => {
   return (
@@ -9,4 +9,4 @@ const Contact = () => {
   );
 }
 
-export default Contact;
+export default Contact
