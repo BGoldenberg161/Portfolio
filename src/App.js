@@ -14,7 +14,7 @@ const App = () => {
       })
 
   return (
-    <div className="row">
+    <div className="main row">
         <div className="col s12 m9 l10">
             <div id="home" className="section scrollspy">
                 <Home />
@@ -28,7 +28,7 @@ const App = () => {
                 <About />
             </div>
         </div>
-        <div className="col hide-on-small-only m3 l2">
+        <div className="col hide-on-small-only m3 l2" id="sidenav">
             <ul className="section table-of-contents">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
