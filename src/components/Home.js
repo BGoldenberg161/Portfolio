@@ -18,16 +18,12 @@ const Home = () => {
                   enable: true,
                   mode: "bubble"
                 },
-                onclick: {
-                  enable: true,
-                  mode: "bubble"
-                },
                 resize: true
               },
               modes: {
                 bubble: {
                   distance: 100,
-                  size: 20,
+                  size: 30,
                   duration: 2,
                   opacity: 8,
                   speed: 3
@@ -43,7 +39,7 @@ const Home = () => {
                 straight: false
               },
               number: {
-                value: 200
+                value: 300
               },
               shape: {
                 type: "image",

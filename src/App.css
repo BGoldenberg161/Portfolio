@@ -29,7 +29,7 @@
   font-size: 5vh;
   position: relative;
   height: 50%;
-  width: 75%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,6 +63,6 @@
 
 #tsparticles {
   position: absolute;
-  width: 100rem;
+  width: 100vw;
   height: 100%;
 }
