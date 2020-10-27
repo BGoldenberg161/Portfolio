@@ -14,8 +14,8 @@ const Projects = () => {
   return (
     <div className="projects">
       <h1>Cool animation effect</h1>
-      <img src={class1} alt="image of app" width="200px"></img>
-      <img src={class2} alt="image of app" width="200px"></img>
+      <img src={class1} alt="class1" width="200px"></img>
+      <img src={class2} alt="class2" width="200px"></img>
       <p>
         technologies used: 
         Node, Python, Django, Django-rest-framework, jwt-tokens, 
@@ -29,8 +29,8 @@ const Projects = () => {
         welcome to Class.
       </p>
       <p>The future of this app?</p>
-      <img src={apartmate1} alt="image of app" width="200px"></img>
-      <img src={apartmate2} alt="image of app" width="200px"></img>
+      <img src={apartmate1} alt="apartmate1" width="200px"></img>
+      <img src={apartmate2} alt="apartmate2" width="200px"></img>
       <p>
         technologies used:  
         Node, Javascript, React, MaterialUI, MongoDB, passport 
@@ -45,9 +45,9 @@ const Projects = () => {
         the amount and your roomates will get a text with the exact Venmo amount they need to pay you.
       </p>
       <p>The future of this app?</p>
-      <img src={emulsio1} alt="image of app" width="200px"></img>
-      <img src={emulsio2} alt="image of app" width="200px"></img>
-      <img src={emulsio3} alt="image of app" width="200px"></img>
+      <img src={emulsio1} alt="emulsio1" width="200px"></img>
+      <img src={emulsio2} alt="emulsio2" width="200px"></img>
+      <img src={emulsio3} alt="emulsio3" width="200px"></img>
       <p>
         technologies used:  
         Node, Javascript, Materialize, Postgresql, Express, ejs
@@ -62,8 +62,8 @@ const Projects = () => {
         working in the kitchen!
       </p>
       <p>The future of this app?</p>
-      <img src={superskierbro1} alt="image of app" width="200px"></img>
-      <img src={superskierbro2} alt="image of app" width="200px"></img>
+      <img src={superskierbro1} alt="superskierbro1" width="200px"></img>
+      <img src={superskierbro2} alt="superskierbro2" width="200px"></img>
       <p>
         technologies used:  
         Javascript, HTML5, CSS3
