@@ -1,22 +1,13 @@
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-}
-
-.main {
-  width: 100vw;
 }
 
 .homeContainer {
-  position: relative;
-  top: -15px;
-  margin: 0;
-  padding: 0;
   width: 100vw;
   height: 100vh;
   background-image: url("https://wallpaperaccess.com/full/83501.jpg");
-  /* background-repeat: no-repeat; */
   background-size: cover;
   display: flex;
   align-items: center;
@@ -38,19 +29,30 @@
   border-radius: 25px;
 }
 
+.homeButtons{
+  display: flex;
+  flex-direction: row;
+}
+
+.buttonText {
+  font-size: 12px;
+}
+
+.buttonContainer {
+  margin: 10px;
+}
+
 .projects {
-  width: 100%;
+  width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: 50% 50%; */
   border: 5px solid red;
 }
 
 .about {
-  width: 100%;
+  width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: 50% 50%; */
   border: 5px solid red;
 }
 

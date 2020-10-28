@@ -1,229 +1,35 @@
-import React, { useEffect, useState } from 'react';
-import '../App.css';
-import Particles from 'react-tsparticles'
-import axios from 'axios'
+import React from 'react'
+import '../App.css'
+import Weather from './Weather'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
 
 const Home = () => {
-
-  const [weather, setWeather] = useState('snow')
-  const [clientCity, setClientCity] = useState('Denver')
-
-  useEffect(()=>{
-    axios.get('https://geolocation-db.com/json/')
-    .then(res => {
-      console.log(res.data?.city)
-      setClientCity(res.data.city)
-    })
-      .then(() => {
-        axios.get(`http://api.weatherapi.com/v1/current.json?key=01a36905ba3b4526ab7161941202610&q=${clientCity}`)
-        .then(res => {
-          console.log(res.data?.current?.condition?.text)
-          setWeather(res.data?.current?.condition?.text)
-        })
-        .catch(err => {
-          console.log('There was an error fetching weather data: ', err)
-        })
-      })
-    .catch(err => {
-      console.log('There was an error fetching ip address data: ', err)
-    })
-  }, [])
-  console.log(weather)
   
   return (
-    // current weather outputs
-    // Sunny
-    // Partly cloudy
-    // Light rain
-    // Moderate or heavy rain shower
-    // Patchy light snow
-    // Overcast
-    // Mist
-    // break down to: rain, sun, cloudy, snow
-
     <>
       <div className="homeContainer">
-        {/* snow */}
-        <Particles
-          id="tsparticles"
-          options={{
-            fpsLimit: 60,
-            interactivity: {
-              detectsOn: "window",
-              events: {
-                onHover: {
-                  enable: true,
-                  mode: "bubble"
-                },
-                resize: true
-              },
-              modes: {
-                bubble: {
-                  distance: 100,
-                  size: 30,
-                  duration: 2,
-                  opacity: 8,
-                  speed: 3
-                },
-              }
-            },
-            particles: {
-              move: {
-                direction: "bottom",
-                enable: true,
-                random: true,
-                speed: 1,
-                straight: false
-              },
-              number: {
-                value: 300
-              },
-              shape: {
-                type: "image",
-                stroke: {
-                  width: 3
-                },
-                polygon: {
-                  nb_sides: 5
-                },
-                image: {
-                  src:
-                    "https://res.cloudinary.com/bgoldenberg161/image/upload/v1603469507/snowflake_dcmibo.png",
-                    width: 100,
-                    height: 100
-                }
-              },
-              size: {
-                random: true,
-                value: 5
-              }
-            },
-            detectRetina: true
-          }}
-        />
-
-        {/* rain */}
-        <Particles
-          id="tsparticles"
-          options={{
-            fpsLimit: 60,
-            interactivity: {
-              detectsOn: "window",
-              events: {
-                onHover: {
-                  enable: true,
-                  mode: "bubble"
-                },
-                resize: true
-              },
-              modes: {
-                bubble: {
-                  distance: 100,
-                  size: 30,
-                  duration: 2,
-                  opacity: 8,
-                  speed: 3
-                },
-              }
-            },
-            particles: {
-              move: {
-                direction: "bottom",
-                enable: true,
-                speed: 5,
-                straight: true
-              },
-              number: {
-                value: 400,
-                random: true
-              },
-              shape: {
-                type: "image",
-                stroke: {
-                  width: 3
-                },
-                polygon: {
-                  nb_sides: 5
-                },
-                image: {
-                  src:
-                    "https://res.cloudinary.com/bgoldenberg161/image/upload/v1603745238/raindrop_o0msqt.png",
-                    width: 50,
-                    height: 100
-                }
-              },
-              size: {
-                random: true,
-                value: 5
-              }
-            },
-            detectRetina: true
-          }}
-        />
-
-        {/* clouds */}
-        <Particles
-          id="tsparticles"
-          options={{
-            fpsLimit: 60,
-            interactivity: {
-              detectsOn: "window",
-              events: {
-                onHover: {
-                  enable: true,
-                  mode: "bubble"
-                },
-                resize: true
-              },
-              modes: {
-                bubble: {
-                  distance: 100,
-                  size: 500,
-                  duration: 2,
-                  opacity: 8,
-                  speed: 3
-                },
-              }
-            },
-            particles: {
-              move: {
-                direction: "right",
-                enable: true,
-                random: true,
-                speed: .5,
-                straight: false
-              },
-              number: {
-                value: 25
-              },
-              shape: {
-                type: "image",
-                stroke: {
-                  width: 3
-                },
-                polygon: {
-                  nb_sides: 5
-                },
-                image: {
-                  src:
-                    "https://res.cloudinary.com/bgoldenberg161/image/upload/v1603744746/cloud_a7wlvw.png",
-                    width: 600,
-                    height: 300
-                }
-              },
-              size: {
-                random: true,
-                value: 400
-              }
-            },
-            detectRetina: true
-          }}
-        />
-
+        <Weather />
         <div className="homeText">
           <p>Hello,</p>
           <p>I'm Branden Goldenberg</p>
           <p>a full-stack developer</p>
+          <div className="homeButtons">
+            <div className="buttonContainer">
+              <a className="btn-floating btn-med waves-effect waves-light deep-purple accent-2" href="https://drive.google.com/file/d/17rs9rRbS0WdQzXekSz9X913xHimVNaQQ/view?usp=sharing" target="blank"><i className="material-icons">library_books</i></a>
+              <p className="buttonText">Resume</p>
+            </div>
+            <div className="buttonContainer">
+              <a className="btn-floating btn-med waves-effect waves-light deep-purple accent-2" href="https://www.linkedin.com/in/bgoldenberg161/" target="blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+              <p className="buttonText">LinkedIn</p>
+            </div>
+            <div className="buttonContainer">
+              <a className="btn-floating btn-med waves-effect waves-light deep-purple accent-2" href="https://github.com/BGoldenberg161" target="blank"><FontAwesomeIcon icon={faGithub} /></a>
+              <p className="buttonText">GitHub</p>
+            </div>
+          </div>
         </div>
       </div>
     </>

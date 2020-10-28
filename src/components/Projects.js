@@ -13,7 +13,6 @@ import superskierbro2 from '../images/superskierbro2.png'
 const Projects = () => {
   return (
     <div className="projects">
-      <h1>Cool animation effect</h1>
       <img src={class1} alt="class1" width="200px"></img>
       <img src={class2} alt="class2" width="200px"></img>
       <p>
