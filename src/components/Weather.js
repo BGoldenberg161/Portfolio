@@ -18,7 +18,7 @@ const Weather = () => {
         axios.get(`http://api.weatherapi.com/v1/current.json?key=01a36905ba3b4526ab7161941202610&q=${clientCity}`)
         .then(res => {
           console.log(res.data?.current?.condition?.text)
-          setWeather(res.data?.current?.condition?.text)
+          setWeather(res.data?.current?.condition?.text.toLowerCase())
         })
         .catch(err => {
           console.log('There was an error fetching weather data: ', err)
@@ -90,7 +90,7 @@ const Weather = () => {
                     detectRetina: true
                 }}
             />)}
-            else if (weather.includes('cloud')){ 
+            else if (weather.includes('cloud') || weather.includes('overcast')){ 
                 // clouds
                 return (
                 <Particles
@@ -226,6 +226,7 @@ const Weather = () => {
     // Patchy light snow
     // Overcast
     // Mist
+    // Clear
     // break down to: rain, cloudy, snow, and other(sun)
     <>
        {renderWeather()} 

@@ -26,7 +26,7 @@ const App = () => {
             <div id="about" className="section scrollspy">
                 <About />
             </div>
-            <div id="about" className="section scrollspy">
+            <div id="contact" className="section scrollspy">
                 <Contact />
             </div>
         </div>
@@ -35,6 +35,7 @@ const App = () => {
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>

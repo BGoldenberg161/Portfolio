@@ -13,8 +13,8 @@ import superskierbro2 from '../images/superskierbro2.png'
 const Projects = () => {
   return (
     <div className="projects">
-      <img src={class1} alt="class1" width="200px"></img>
-      <img src={class2} alt="class2" width="200px"></img>
+      <img src={class1} alt="class1" width="50%"></img>
+      <img src={class2} alt="class2" width="50%"></img>
       <p>
         technologies used: 
         Node, Python, Django, Django-rest-framework, jwt-tokens, 
@@ -27,9 +27,8 @@ const Projects = () => {
         with ease. The beginging of a true one-stop shop, 
         welcome to Class.
       </p>
-      <p>The future of this app?</p>
-      <img src={apartmate1} alt="apartmate1" width="200px"></img>
-      <img src={apartmate2} alt="apartmate2" width="200px"></img>
+      <img src={apartmate1} alt="apartmate1" width="50%"></img>
+      <img src={apartmate2} alt="apartmate2" width="50%"></img>
       <p>
         technologies used:  
         Node, Javascript, React, MaterialUI, MongoDB, passport 
@@ -43,10 +42,9 @@ const Projects = () => {
         member and to top it off, you can easily split Venmo payments by inputting 
         the amount and your roomates will get a text with the exact Venmo amount they need to pay you.
       </p>
-      <p>The future of this app?</p>
-      <img src={emulsio1} alt="emulsio1" width="200px"></img>
-      <img src={emulsio2} alt="emulsio2" width="200px"></img>
-      <img src={emulsio3} alt="emulsio3" width="200px"></img>
+      <img src={emulsio1} alt="emulsio1" width="100%"></img>
+      <img src={emulsio2} alt="emulsio2" width="50%"></img>
+      <img src={emulsio3} alt="emulsio3" width="50%"></img>
       <p>
         technologies used:  
         Node, Javascript, Materialize, Postgresql, Express, ejs
@@ -60,9 +58,8 @@ const Projects = () => {
         has been optimized for mobile to ease the use of the app while actually 
         working in the kitchen!
       </p>
-      <p>The future of this app?</p>
-      <img src={superskierbro1} alt="superskierbro1" width="200px"></img>
-      <img src={superskierbro2} alt="superskierbro2" width="200px"></img>
+      <img src={superskierbro1} alt="superskierbro1" width="50%"></img>
+      <img src={superskierbro2} alt="superskierbro2" width="50%"></img>
       <p>
         technologies used:  
         Javascript, HTML5, CSS3
@@ -72,7 +69,6 @@ const Projects = () => {
         to do damage while gaining experience points to level up. All the artwork was 
         also hand drawn. A truly from scratch mini game!
       </p>
-      <p>The future of this app?</p>
     </div>
   );
 }
