@@ -11,9 +11,17 @@ import skiing from '../images/skiing.jpg'
 const About = () => {
 
   useEffect(() => {
-    const elems = document.querySelectorAll('.carousel');
-    const instances = M.Carousel.init(elems);
-  });
+    const elem = document.querySelector('.carousel')
+    const instance = M.Carousel.init(elem, {
+      indicators: true,
+      numVisible: 3, 
+      duration: 1000
+    })
+    const interval = setInterval(() => {
+      instance.next()
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [])
 
   return (
     <div className="about">
