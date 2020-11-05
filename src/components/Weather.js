@@ -5,7 +5,7 @@ import axios from 'axios'
 
 const Weather = () => {
 
-  const [weather, setWeather] = useState('snow')
+  const [weather, setWeather] = useState('rain')
   const [clientCity, setClientCity] = useState('Denver')
 
   useEffect(()=>{

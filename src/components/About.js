@@ -25,6 +25,15 @@ const About = () => {
 
   return (
     <div className="about">
+      <h1 className="header">About Me</h1>
+      <p className="aboutDetails">
+        I am a full stack developer whose experience as a professional skier 
+        has nourished my love of mother nature and taught me how to persevere 
+        in the face of adversity. The art of quick decision making in high-risk 
+        situations combined with a formal mechanical engineering education 
+        provides a unique outlook on problem solving. This perspective helps 
+        teams exceed deadline expectations and positively affect the bottom line.
+      </p>
       <div className="carousel">
         <a className="carousel-item" ><img src={biking} alt="biking with friends" height="200px"></img></a>
         <a className="carousel-item" ><img src={camping} alt="camping by a lake" height="200px"></img></a>
@@ -33,14 +42,6 @@ const About = () => {
         <a className="carousel-item" ><img src={climbing} alt="rock climbing at night" height="200px"></img></a>
         <a className="carousel-item" ><img src={khione} alt="my dog Kninoe" height="200px"></img></a>
       </div>
-      <p>
-        I am a full stack developer whose experience as a professional skier 
-        has nourished my love of mother nature and taught me how to persevere 
-        in the face of adversity. The art of quick decision making in high-risk 
-        situations combined with a formal mechanical engineering education 
-        provides a unique outlook on problem solving. This perspective helps 
-        teams exceed deadline expectations and positively affect the bottom line.
-      </p>
     </div>
   )
 }

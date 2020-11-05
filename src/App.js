@@ -15,7 +15,7 @@ const App = () => {
       })
 
   return (
-    <div className="main row">
+    <div className="main">
         <div className="col s12 m9 l10">
             <div id="home" className="section scrollspy">
                 <Home />
@@ -26,16 +26,16 @@ const App = () => {
             <div id="about" className="section scrollspy">
                 <About />
             </div>
-            <div id="contact" className="section scrollspy">
+            {/* <div id="contact" className="section scrollspy">
                 <Contact />
-            </div>
+            </div> */}
         </div>
         <div className="col hide-on-small-only m3 l2" id="sidenav">
             <ul className="section table-of-contents">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                {/* <li><a href="#contact">Contact</a></li> */}
             </ul>
         </div>
     </div>
