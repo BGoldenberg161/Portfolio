@@ -1,36 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import '../App.css';
 import Particles from 'react-tsparticles'
-import axios from 'axios'
 
-const Weather = () => {
-
-  const [weather, setWeather] = useState('rain')
-  const [clientCity, setClientCity] = useState('Denver')
-
-  useEffect(()=>{
-    axios.get('https://geolocation-db.com/json/')
-    .then(res => {
-      console.log(res.data?.city)
-      setClientCity(res.data.city)
-    })
-      .then(() => {
-        axios.get(`http://api.weatherapi.com/v1/current.json?key=01a36905ba3b4526ab7161941202610&q=${clientCity}`)
-        .then(res => {
-          console.log(res.data?.current?.condition?.text)
-          setWeather(res.data?.current?.condition?.text.toLowerCase())
-        })
-        .catch(err => {
-          console.log('There was an error fetching weather data: ', err)
-        })
-      })
-    .catch(err => {
-      console.log('There was an error fetching ip address data: ', err)
-    })
-  }, [])
-
+const Weather = (props) => {
+    
   const renderWeather = () => {
-    if (weather.includes('snow')) { 
+    if (props.weather.includes('snow')) { 
             // snow
             return (
             <Particles
@@ -84,13 +59,13 @@ const Weather = () => {
                     },
                     size: {
                         random: true,
-                        value: 5
+                        value: 8
                     }
                     },
                     detectRetina: true
                 }}
             />)}
-            else if (weather.includes('cloud') || weather.includes('overcast')){ 
+            else if (props.weather.includes('cloud') || props.weather.includes('overcast')){ 
                 // clouds
                 return (
                 <Particles
@@ -150,10 +125,12 @@ const Weather = () => {
                         detectRetina: true
                     }}
                 />)} 
-                else if (weather.includes('rain')){ 
+                else if (props.weather.includes('rain')){ 
                     // rain
+                    https://images.unsplash.com/photo-1601974873496-1a65ed723542?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80
                     return (
                     <Particles
+                        // style={{backgroundImage: `${rainBackground}`}}
                         id="tsparticles"
                         options={{
                             fpsLimit: 60,
