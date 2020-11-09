@@ -1,16 +1,10 @@
 import React, {useEffect} from 'react'
 import '../App.css'
 import M from "materialize-css"
-import class1 from '../images/class1.png'
-import class2 from '../images/class2.png'
-import classtest from '../images/classtest.png'
-import apartmate1 from '../images/apartmate1.png'
-import apartmate2 from '../images/apartmate2.png'
-import emulsio_small from '../images/Emulsio_smoll.png'
-import emulsio2 from '../images/Emulsio2.png'
-import emulsio3 from '../images/emulsio3.png'
-import superskierbro1 from '../images/superskierbro1.png'
-import superskierbro2 from '../images/superskierbro2.png'
+import classImg from '../images/Class.png'
+import apartmate from '../images/Apartmate.png'
+import emulsio from '../images/Emulsio_smoll.png'
+import superskierbro from '../images/SuperSkierBro.png'
 
 const Projects = () => {
 
@@ -46,7 +40,7 @@ const Projects = () => {
       </div>
       <div className="parallax-container">
         <div className="parallax">
-          <img src={classtest} alt="class1" width="50%"></img>
+          <img src={classImg} alt="class" width="50%"></img>
         </div>
       </div>
       <div className="projectDetails">
@@ -73,7 +67,7 @@ const Projects = () => {
       </div>
       <div className="parallax-container">
         <div className="parallax">
-          <img src={apartmate1} alt="apartmate1" width="50%"></img>
+          <img src={apartmate} alt="apartmate" width="50%"></img>
         </div>
       </div>
       <div className="projectDetails">
@@ -99,7 +93,7 @@ const Projects = () => {
       </div>
       <div className="parallax-container">
         <div className="parallax">
-          <img src={emulsio_small} alt="emulsio1" width="100%"></img>
+          <img src={emulsio} alt="emulsio" width="100%"></img>
         </div>
       </div>
       <div className="projectDetails">
@@ -118,7 +112,7 @@ const Projects = () => {
       </div>
       <div className="parallax-container">
         <div className="parallax">
-          <img src={superskierbro2} alt="superskierbro1" width="50%"></img>
+          <img src={superskierbro} alt="superskierbro" width="50%"></img>
         </div>
       </div>
     </div>
