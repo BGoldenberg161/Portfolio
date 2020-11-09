@@ -73,13 +73,12 @@ h3 {
   padding: 20px;
 }
 
-/* mediaquery for mobile screens */
 .projectDetails {
   background-color: black;
   color: white;
   background-size: cover;
   margin: 0;
-  padding: 120px;
+  padding: 160px;
 }
 
 .techs {
@@ -95,13 +94,13 @@ h3 {
 }
 
 .aboutDetails {
-  padding: 120px;
+  padding: 160px;
 }
 
 #sidenav {
   width: 100px;
   position: fixed;
-  top: 100px;
+  top: 50px;
   left: 40px;
 }
 
@@ -122,4 +121,36 @@ h3 {
 .table-of-contents {
   background-color: rgba(255, 255, 255, .15);  
   backdrop-filter: blur(5px);
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+.homeText {
+  font-size: 8vw;
+}
+
+.projectDetails {
+  padding: 16px;
+  font-size: 4vw;
+}
+
+.aboutDetails {
+  padding: 16px;
+}
+
+h1 {
+  font-size: 8vw;
+}
+
+h2 {
+  font-size: 6vw;
+}
+
+h3 {
+  font-size: 5vw;
+}
+
+.parallax-container {
+  height: 40vh;
+}
 }

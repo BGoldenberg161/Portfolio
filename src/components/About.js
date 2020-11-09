@@ -31,8 +31,10 @@ const About = () => {
         has nourished my love of mother nature and taught me how to persevere 
         in the face of adversity. The art of quick decision making in high-risk 
         situations combined with a formal mechanical engineering education 
-        provides a unique outlook on problem solving. This perspective helps 
-        teams exceed deadline expectations and positively affect the bottom line.
+        provides a unique outlook on problem solving.
+        <br/> 
+        I live to be in the outdoors. Skiing, mountain biking, river paddling, 
+        and rock climbing are some of my favorites, but I'm always up for a new adventure!
       </p>
       <div className="carousel">
         <a className="carousel-item" ><img src={biking} alt="biking with friends" height="200px"></img></a>

@@ -26,16 +26,12 @@ const App = () => {
             <div id="about" className="section scrollspy">
                 <About />
             </div>
-            {/* <div id="contact" className="section scrollspy">
-                <Contact />
-            </div> */}
         </div>
         <div className="col hide-on-small-only m3 l2" id="sidenav">
             <ul className="section table-of-contents">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                {/* <li><a href="#contact">Contact</a></li> */}
+                <li><a href="#home" className="grey-text text-lighten-3">Home</a></li>
+                <li><a href="#projects" className="grey-text text-lighten-3">Projects</a></li>
+                <li><a href="#about" className="grey-text text-lighten-3">About</a></li>
             </ul>
         </div>
     </div>
