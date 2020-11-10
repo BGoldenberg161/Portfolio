@@ -1,6 +1,9 @@
 import React, {useEffect} from 'react'
 import '../App.css'
 import M from "materialize-css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import classImg from '../images/Class.png'
 import apartmate from '../images/Apartmate.png'
 import emulsio from '../images/Emulsio_smoll.png'
@@ -37,6 +40,16 @@ const Projects = () => {
           <img src="https://img.shields.io/badge/-django--rest--framework-blueviolet"></img>
           <img src="https://img.shields.io/badge/-Nodejs-black?style=flat-square&logo=Node.js"></img>
         </div>
+        <div className="linkButtons">
+          <div className="buttonContainer">
+            <a className="btn-floating btn-med waves-effect waves-light deep-purple accent-2" href="https://classtheapp.herokuapp.com/" target="blank"><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+            <p className="buttonText white-text">Live</p>
+          </div>
+          <div className="buttonContainer">
+            <a className="btn-floating btn-med waves-effect waves-light deep-purple accent-2" href="https://github.com/BGoldenberg161/class_frontend" target="blank"><FontAwesomeIcon icon={faGithub} /></a>
+            <p className="buttonText white-text">Code</p>
+          </div>
+        </div>
       </div>
       <div className="parallax-container">
         <div className="parallax">
@@ -64,6 +77,16 @@ const Projects = () => {
           <img src="https://img.shields.io/badge/-Express-black?style=flat-square&logo=express"></img>
           <img src="https://img.shields.io/badge/-Nodejs-black?style=flat-square&logo=Node.js"></img>
         </div>
+        <div className="linkButtons">
+          <div className="buttonContainer">
+            <a className="btn-floating btn-med waves-effect waves-light deep-purple accent-2" href="https://apartmate-client.herokuapp.com/" target="blank"><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+            <p className="buttonText white-text">Live</p>
+          </div>
+          <div className="buttonContainer">
+            <a className="btn-floating btn-med waves-effect waves-light deep-purple accent-2" href="https://github.com/BGoldenberg161/ApartMate-Frontend" target="blank"><FontAwesomeIcon icon={faGithub} /></a>
+            <p className="buttonText white-text">Code</p>
+          </div>
+        </div>
       </div>
       <div className="parallax-container">
         <div className="parallax">
@@ -90,6 +113,16 @@ const Projects = () => {
           <img src="https://img.shields.io/badge/-Express-black?style=flat-square&logo=express"></img>
           <img src="https://img.shields.io/badge/-Nodejs-black?style=flat-square&logo=Node.js"></img>
         </div>
+        <div className="linkButtons">
+          <div className="buttonContainer">
+            <a className="btn-floating btn-med waves-effect waves-light deep-purple accent-2" href="https://emulsio.herokuapp.com/" target="blank"><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+            <p className="buttonText white-text">Live</p>
+          </div>
+          <div className="buttonContainer">
+            <a className="btn-floating btn-med waves-effect waves-light deep-purple accent-2" href="https://github.com/BGoldenberg161/Emulsio" target="blank"><FontAwesomeIcon icon={faGithub} /></a>
+            <p className="buttonText white-text">Code</p>
+          </div>
+        </div>
       </div>
       <div className="parallax-container">
         <div className="parallax">
@@ -108,6 +141,16 @@ const Projects = () => {
         <img src="https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript"></img>
         <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"></img>
         <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3"></img>
+        </div>
+        <div className="linkButtons">
+          <div className="buttonContainer">
+            <a className="btn-floating btn-med waves-effect waves-light deep-purple accent-2" href="https://bgoldenberg161.github.io/SuperSkierBro/" target="blank"><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+            <p className="buttonText white-text">Live</p>
+          </div>
+          <div className="buttonContainer">
+            <a className="btn-floating btn-med waves-effect waves-light deep-purple accent-2" href="https://github.com/BGoldenberg161/SuperSkierBro" target="blank"><FontAwesomeIcon icon={faGithub} /></a>
+            <p className="buttonText white-text">Code</p>
+          </div>
         </div>
       </div>
       <div className="parallax-container">

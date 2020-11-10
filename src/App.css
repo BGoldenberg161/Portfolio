@@ -22,7 +22,6 @@ h3 {
 .homeContainer {
   width: 100vw;
   height: 85vh;
-  /* background-image: url("https://media.9news.com/assets/KUSA/images/547642590/547642590_1920x1080.png"); */
   background-size: cover;
   display: flex;
   align-items: center;
@@ -35,14 +34,15 @@ h3 {
   backdrop-filter: blur(5px);
   font-size: 5vh;
   position: relative;
-  height: 50%;
-  width: 50%;
+  height: 60%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   border-radius: 25px;
+  padding: 24px;
   color: white;
 }
 
@@ -50,9 +50,12 @@ h3 {
   color: rgb(0, 255, 208);
 }
 
-.homeButtons {
+.homeButtons, .linkButtons {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin: 32px;
+  /* align-items: center; */
 }
 
 .buttonText {
@@ -60,7 +63,9 @@ h3 {
 }
 
 .buttonContainer {
-  margin: 10px;
+  margin: 8px;
+  text-align: center;
+  justify-content: center;
 }
 
 .projects {
@@ -75,7 +80,7 @@ h3 {
   color: white;
   background-size: cover;
   margin: 0;
-  padding: 20px;
+  padding: 24px;
 }
 
 .projectDetails {
@@ -126,14 +131,19 @@ h3 {
 .table-of-contents {
   background-color: rgba(72, 72, 72, 0.15);  
   backdrop-filter: blur(5px);
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 16px 16px 0;
 }
 .table-of-contents a.active{
-  border-left: 2px solid rgb(159, 75, 255);
+  border-left: 4px solid rgb(0, 255, 208);
+}
+
+.table-of-contents a:hover{
+  border-left: 4px solid rgb(159, 75, 255);
 }
 
 @media only screen and (max-width: 600px) {
 .homeText {
+  height: 65%;
   font-size: 8vw;
 }
 
