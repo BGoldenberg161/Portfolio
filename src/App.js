@@ -28,7 +28,7 @@ const App = () => {
         setClientCity(res.data.city)
         })
         .then(() => {
-            axios.get(`http://api.weatherapi.com/v1/current.json?key=01a36905ba3b4526ab7161941202610&q=${clientCity}`)
+            axios.get(`https://api.weatherapi.com/v1/current.json?key=01a36905ba3b4526ab7161941202610&q=${clientCity}`)
             .then(res => {
             console.log(res.data?.current?.condition?.text)
             setWeather(res.data?.current?.condition?.text.toLowerCase())
